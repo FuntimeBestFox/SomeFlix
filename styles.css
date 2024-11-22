@@ -10,3 +10,9 @@ header {
       font-size: 32px;
       color: rgb(62, 255, 94);
 }
+/* Make iframe responsive */
+iframe {
+      max-width: 100%;
+      height: auto;
+  }
+  
