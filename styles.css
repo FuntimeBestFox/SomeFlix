@@ -93,4 +93,6 @@
   header, section div {
       border: 3px solid var(--primary-color);
   }
-  
+chamada-texto {
+  margin-right: 20px;
+}  
