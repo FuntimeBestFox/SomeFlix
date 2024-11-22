@@ -1,18 +1,96 @@
-body {
-      color: rgb(62, 255, 94);
-      background: black;
-      margin: 3px;
-}
-
-header {
-      border-bottom: solid 2px rgb(62, 255, 94);
+/* Definindo cores e variáveis para o tema FNaF */
+:root {
+      --primary-color: rgb(255, 221, 51); /* Amarelo Freddy */
+      --secondary-color: rgb(62, 255, 94); /* Verde neon (para elementos de destaque) */
+      --dark-bg: #0f0f0f; /* Fundo preto escuro */
+      --text-color: #f3f3f3; /* Cor clara para o texto */
+      --border-color: rgb(255, 221, 51); /* Amarelo Freddy */
+  }
+  
+  /* Corpo do site */
+  body {
+      color: var(--text-color);
+      background: var(--dark-bg); /* Cor escura para dar a sensação de mistério */
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace; /* Fonte rústica, remete à sensação de antigo */
+  }
+  
+  /* Cabeçalho */
+  header {
+      border-bottom: solid 2px var(--border-color);
       padding: 20px;
       font-size: 32px;
-      color: rgb(62, 255, 94);
-}
-/* Make iframe responsive */
-iframe {
+      color: var(--primary-color);
+      text-align: center;
+      font-family: 'Press Start 2P', cursive; /* Fonte pixelada, estilo retrô do jogo */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Efeito de sombra para dar um aspecto "sombrio" */
+  }
+  
+  /* Estilo para os títulos dentro da seção */
+  section h1 {
+      font-size: 36px;
+      color: var(--primary-color);
+      text-align: center;
+      font-family: 'Press Start 2P', cursive;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para destacar o título */
+  }
+  
+  /* Estilo para os parágrafos */
+  section p {
+      font-size: 18px;
+      color: var(--text-color);
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+  }
+  
+  /* Tornando o iframe responsivo */
+  iframe {
       max-width: 100%;
       height: auto;
+      border: none;
+      border-radius: 5px; /* Cantos arredondados para o iframe */
+  }
+  
+  /* Estilizando links com efeito de hover */
+  a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+  
+  a:hover {
+      color: var(--secondary-color); /* Muda para verde neon ao passar o mouse */
+  }
+  
+  /* Estilizando divs para o efeito de "frame" */
+  div {
+      background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semitransparente */
+      border: 3px solid var(--primary-color);
+      padding: 15px;
+      margin: 20px auto;
+      border-radius: 10px; /* Cantos arredondados */
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 0 15px rgba(255, 221, 51, 0.5); /* Brilho amarelado ao redor */
+  }
+  
+  /* Estilo para a seção */
+  section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+  }
+  
+  /* Imagem de fundo para dar mais imersão (opcional) */
+  body {
+      background-image: url('caminho/para/imagem-fundo.jpg'); /* Substitua o caminho pela sua imagem de fundo */
+      background-size: cover;
+      background-position: center;
+  }
+  
+  /* Adicionando bordas com "efeito de segurança" em algumas áreas */
+  header, section div {
+      border: 3px solid var(--primary-color);
   }
   
