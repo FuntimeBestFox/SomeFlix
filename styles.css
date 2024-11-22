@@ -13,6 +13,9 @@
       background: var(--dark-bg); /* Cor escura para dar a sensação de mistério */
       margin: 0;
       font-family: 'Courier New', Courier, monospace; /* Fonte rústica, remete à sensação de antigo */
+      background-image: url('caminho/para/imagem-fundo.jpg'); /* Substitua o caminho pela sua imagem de fundo */
+      background-size: cover;
+      background-position: center;
   }
   
   /* Cabeçalho */
@@ -82,17 +85,13 @@
       margin-top: 40px;
   }
   
-  /* Imagem de fundo para dar mais imersão (opcional) */
-  body {
-      background-image: url('caminho/para/imagem-fundo.jpg'); /* Substitua o caminho pela sua imagem de fundo */
-      background-size: cover;
-      background-position: center;
-  }
-  
   /* Adicionando bordas com "efeito de segurança" em algumas áreas */
   header, section div {
       border: 3px solid var(--primary-color);
   }
-chamada-texto {
-  margin-right: 20px;
-}  
+  
+  /* Definindo estilo para a classe chamada-texto */
+  .chamada-texto {
+      margin-right: 20px; /* Adiciona espaço à direita do texto */
+  }
+  
